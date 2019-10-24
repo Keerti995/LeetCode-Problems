@@ -7,13 +7,7 @@ class Solution {
         if(nums.length<3)
             return list;
                             Arrays.sort(nums);
-                            /*QuickSort(nums,0,nums.length-1);
-                            */for(int i=0;i<nums.length;i++){
-                                System.out.print(nums[i]);}
-                                /*if(max<nums[i])
-                                    max=nums[i];
-                            }*/
-
+                            
         for(int i=0;i<nums.length;i++)
         {
             if(a.contains(nums[i]))
@@ -30,8 +24,6 @@ class Solution {
                 for(int j=m+1;j<nums.length;j++)
                 {    
                    if(nums[m]+nums[j] == rest){
-                       System.out.print("nums[i]"+nums[i]+" rest: "+rest+" m" +m+" nums[m]: "+nums[m]+" j: "+j+" nums[j]: "+nums[j]);
-                  System.out.println("");
                         List<Integer> smalllist = new ArrayList<Integer>();
                         smalllist.add(nums[i]);
                         smalllist.add(nums[m]);
